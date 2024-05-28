@@ -11,5 +11,11 @@
 ## GO
 
 ## Java
-   
-## DB
+
+## CS
+### OS
+### Network
+### DB
+### Security
+### SW Engineering
+### 
