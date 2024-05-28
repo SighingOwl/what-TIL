@@ -1,5 +1,5 @@
 <details>
-<h2>컨테이너 기술이란?</h2>
+<summary>컨테이너 기술이란?</summary>
 <div markdown="1">
 
 ### 컨테이너 기술
@@ -76,5 +76,66 @@
     2. 애플리케이션 패키징 - Docker Image
     3. 이미지 공유 - Docker Hub
     4. 애플리케이션 배포 - Docker Container
+</div>
+</details>
+   
+<details>
+<summary>Docker 컨테이너 가상화와 VM 가상화 비교 </summary>
+<div markdown="1">
 
+### 가상화
+
+- 일반적으로 서버, 스토리지, 네트워크, 애플리케이션 등을 가상화
+    - 하드웨어 리소스의 효율적 사용
+    - 효율적인 자원 활용, 자동화된 IT 관리, 빠른 재해 복구
+- 물리적인 하드웨어 유지 관리 대신 소프트웨어저그올 추상화된 가상화를 통해 제한된 부분을 쉽게 관리 유지
+- 하이퍼바이저 기반의 가상머신을 통해 수생
+    - Vmware
+    - VirtualBox
+
+### 컨테이너 가상화 vs VM 가상화
+
+- 공통점
+    - 실행하고자 하는 애플리케이션 프로세스 및 종속성, 소스 등을 이미지화 하여 HostOS와 격리된 환경 제공
+    - OCI
+- 차이점
+    - VM 가상화는 실제 HostOS와 같은 별도의 GuestOS+Kernel를 두고 원하는 애플리케이션을 설치하는 하드웨어 수준의 가상화
+        - 부팅이 필요
+    - 컨테이너 가상화는 VM 가상화에 비해 경량이면서 HostOS의 커널을 공유하는 OS 수준의 가상화
+        - 별도의 커널이 필요없어 경량이다.
+        - Docker 명령 몇 줄로 바로 실행가능
+- 컨테이너 가상화는 원하는 애플리케이션 환경을 빠르게 번들링하여 패키징
+
+### 컨테이너화 기술
+
+- 리눅스 컨테이너 기술은 LXC(Linux Container)를 이용한 시스템 컨테이너화로 시작
+    - OS 수준의 가상화 도구
+    - cgroup, namespace 등의 커널 기술을 공유하여 컨테이너에 제공
+- 컨테이너 기반 Docker는 초기에 LXC를 활용해 컨테이너를 생성
+    - 지속적인 발전으로 containerd, runC를 이용하는 방식으로 변경
+    - runC : 커널 기술의 공유를 통해 컨테이너 생성을 지원
+    - containerd : 생성된 컨테이너의 라이프사이클 관리를 지원
+    - dockerd : 사용자 환경에서 명령을 전달
+</div>
+</details>
+
+<details>
+<summary>Play with Docker</summary>
+<div markdown="1">
+
+### Docker 컨테이너 놀이터
+
+[Play with Docker | Docker](https://www.docker.com/play-with-docker/)
+
+- Docker가 웹에서 제공하는 인스턴스 형태의 Docker 랩실을 제공
+- 한 인스턴스 당 4시간이며 무료
+
+### 사용
+
+1. Docker Hub 계정으로 로그인한 후 세션에서 새로운 인스턴스 추가
+    
+    ![play_with_docker](./images/play_with_docker.png)
+    
+2. 터미널에서 docker 명령 테스트
+</div>
 </details>
