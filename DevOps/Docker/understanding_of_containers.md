@@ -134,7 +134,7 @@
 
 1. Docker Hub 계정으로 로그인한 후 세션에서 새로운 인스턴스 추가
     
-    ![play_with_docker](./images/play_with_docker.png)
+    ![play_with_docker](/images/play_with_docker.png)
     
 2. 터미널에서 docker 명령 테스트
 </div>
