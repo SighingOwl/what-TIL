@@ -1,3 +1,3 @@
 # what-TIL
 ---
-| What makes you grow today?
+> What makes you grow today?
