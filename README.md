@@ -2,6 +2,7 @@
 > What makes you grow today?
 ## DevOps
 ### Docker
+> Understanding of Containers
 ### Kubernetes
 ### AWS
 ### CI/CD
