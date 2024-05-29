@@ -4,17 +4,17 @@
 > BIOS에서 가상화 기술 - VT 활성화
     
 Oracle VirtualBoxs는 호스트 OS가 하드웨어 수준의 가상화로 하드웨어 자원을 VM에 나눠줄 수 있어야 한다. 따라서 BIOS에서 가상화 기능 활성화가 필요하다. 만일 Windows나 Linux를 OS로 사용한다면 메인보드 제조사의 지침에 따라 BIOS에서 가상화 기술(VT)를 활성화 해야한다. Mac의 경우 BIOS 대신 EFI를 사용해서 일반 PC처럼 BIOS에 집입할 수 없고 최신 Mac은 이미 가상화 기술 사용이 활성화되어 있어 별도의 설정이 필요하지 않다.
-> ![Asus BIOS](/images/asus_bios.jpeg)
+> <img src="/images/asus_bios.jpeg" width="50%" height="50%" title="asus_bios" alt="asus_bios">
 > 출처 : asus 한국
    
 > Oracle Virtual Box 설치
 
 먼저 VirtualBox 사이트에서 가장 최신 버전의 VirtualBox 다운로드한다.    
 
-<img src="/images/virtualbox_main_site.png" width="30%" height="30%" title="VirtualBox main page" alt="main page"></img>    
+<img src="/images/virtualbox_main_site.png" width="50%" height="50%" title="VirtualBox main page" alt="main page"></img>    
 공식 사이트에 접속하면 최신 버전의 VirtualBox 다운로드 버튼이 보인다.
 
-<img src="/images/virtualbox_site.png" width="30%" height="30%" title="VirtualBox download page" alt="download page"></img>     
+<img src="/images/virtualbox_site.png" width="50%" height="50%" title="VirtualBox download page" alt="download page"></img>     
 다운로드 링크를 따라가면 VirtualBox를 설치할 플랫폼에 맞는 패키지를 다운로드 한다. Intel Macbook에 설치할 예정이므로 macOS/Intel hosts를 설치한다.
 만일 Apple Silicon 계열 CPU를 사용하는 Mac에서 VirtualBox를 설치하고 싶다면 이전 빌드 버전에서 Developer preview for macOS / ARM64 (M1/M2) hosts를 사용할 수는 있으나 VirtualBox는 ARM 아키텍처 기반 CPU를 지원하지 않아 권장하는 방법은 아니다. 만일 Apple Silicon를 사용하는 Mac에서 VM을 사용을 희망한다면 VMware Fusion을 사용하는 것을 사용하는 것을 권장한다.
 
@@ -24,40 +24,40 @@ Oracle VirtualBoxs는 호스트 OS가 하드웨어 수준의 가상화로 하드
 
 Ubuntu 머신을 생성하기 위해서 Ubuntu ISO 파일을 다운로드 한다. 원하는 버전을 선택해서 다운로드해도 되지만 LTS 버전을 사용하기를 권장한다.   
 [Ubuntu 22.04 LTS - Jammy Jellyfish](https://releases.ubuntu.com/jammy/)    
-<img src="/images/ubuntu_download_page.png" width="30%" height="30%" title="Ubuntu download page" alt="download page"></img>  
+<img src="/images/ubuntu_download_page.png" width="50%" height="50%" title="Ubuntu download page" alt="download page"></img>  
 
 VirtualBox를 실행하여 새로 만들기로 VM을 생성한다.
 
-<img src="/images/VM_create_1.png" width="30%" height="30%" title="VM_create_1" alt="VM_create_1"></img>   
+<img src="/images/VM_create_1.png" width="50%" height="50%" title="VM_create_1" alt="VM_create_1"></img>   
 
 먼저 VM의 이름과 OS를 선택한다. VM의 이름에 특정 OS의 이름이 포함되면 자동으로 OS가 선택된다. 다음으로 VM이 사용할 디렉토리를 설정해야하는데 이때 PC에 2개 이상 디스크가 설치되어 있다면 가급적 OS와 간섭을 피하기 위해 OS가 설치되어 있지 않은 디스크의 디렉토리를 선택하는 것을 권장한다. 여기서 사용할 OS의 ISO 이미지를 넣고 자동으로 설치되도록 할 수 있지만 VM에 Ubuntu를 설치할 때 디스크의 파티션을 나눌 예정이므로 선택하지 않았다.    
 
 다음으로 VM의 기본적인 하드웨어 성능 설정이 필요하다. Docker를 사용할 때 실행하는 애플리케이션에 따라 시스템 리소스 사용량이 많을 수 있어 어느정도 여유를 두고 설정했다.    
-<img src="/images/VM_create_2.png" width="30%" height="30%" title="VM_create_2" alt="VM_create_2"></img>   
-<img src="/images/VM_create_3.png" width="30%" height="30%" title="VM_create_3" alt="VM_create_3"></img>   
-<img src="/images/VM_create_4.png" width="30%" height="30%" title="VM_create_4" alt="VM_create_4"></img>   
+<img src="/images/VM_create_2.png" width="50%" height="50%" title="VM_create_2" alt="VM_create_2"></img>   
+<img src="/images/VM_create_3.png" width="50%" height="50%" title="VM_create_3" alt="VM_create_3"></img>   
+<img src="/images/VM_create_4.png" width="50%" height="50%" title="VM_create_4" alt="VM_create_4"></img>   
 > CPU : 4 cores, RAM : 8GB, DISK : 100 GB
 
 머신을 생성한 다음에는 머신을 실행하기 전 설정이 필요하다. Ubuntu ISO 이미지를 넣고 설치가 필요하므로 [디스플레이 설정] 그림과 같이 광 디스크가 가장 먼저 부팅되고 하드디스크가 그 다음에 부팅이 되도록 순서를 조정한다. 프로세스에서 [프로세스 설정] 그림과 같이 PAE/NX 활성화를 해야하며 그 이유는 CPU의 물리적 주소 확장 기능을 VM에서도 사용하기 위해서다. 디스플레이 설정에서 별도로 수행할 작업은 없지만 VM 실행시 화면이 보이지 않을 경우에는 그래픽 컨트롤러를 VBoxVGA로 변경해야한다.  
-<img src="/images/VM_config_1.png" width="30%" height="30%" title="VM_config_1" alt="VM_config_1"></img>    
-<img src="/images/VM_config_2.png" width="30%" height="30%" title="VM_config_2" alt="VM_config_2"></img>    
+<img src="/images/VM_config_1.png" width="50%" height="50%" title="VM_config_1" alt="VM_config_1"></img>    
+<img src="/images/VM_config_2.png" width="50%" height="50%" title="VM_config_2" alt="VM_config_2"></img>    
 
 저장소에서 IDE는 광 디스크가 연결되어 있어 Ubuntu 설치를 위한 ISO 이미지를 삽입한다. SATA에는 VM의 하드디스크가 연결되어 있는데 Docker가 사용할 별도의 디스크를 추가하고 연결한다.
  
-<img src="/images/VM_Storage_config_1.png" width="30%" height="30%" title="VM_storage_1" alt="VM_storage_1"></img>      
-<img src="/images/VM_Storage_config_2.png" width="30%" height="30%" title="VM_storage_2" alt="VM_storage_2"></img>      
-<img src="/images/VM_Storage_config_3.png" width="30%" height="30%" title="VM_storage_3" alt="VM_storage_3"></img>      
+<img src="/images/VM_Storage_config_1.png" width="50%" height="50%" title="VM_storage_1" alt="VM_storage_1"></img>      
+<img src="/images/VM_Storage_config_2.png" width="50%" height="50%" title="VM_storage_2" alt="VM_storage_2"></img>      
+<img src="/images/VM_Storage_config_3.png" width="50%" height="50%" title="VM_storage_3" alt="VM_storage_3"></img>      
 
 네트워크 설정에서 어댑터 1은 이미 NAT로 설정되어 있다. 이유는 VirtualBox를 설치하면 VirtualBox 호스트 이더넷 어댑터가 생성되기 때문이다. 이 어댑터는 게이트웨이 역할을 수행하고 SSH 접속 주소로 사용할 수 있다. 어댑터 2를 호스트 전용 네트워크로 설정한다. 이 어댑터를 추가하면 VirtualBox에 생성된 VM들이 내부 네트워크를 사용해서 다른 VM에 호스트 이름으로 접속이 가능해진다.
 > 원래 호스트 전용 어댑터가 있었으나 지원 종료 예정이므로 비슷한 기능을 수행하는 호스트 전용 네트워크를 사용해야 한다.
 
-<img src="/images/VM_Network_config.png" width="30%" height="30%" title="VM_network" alt="VM_network"></img>    
+<img src="/images/VM_Network_config.png" width="50%" height="50%" title="VM_network" alt="VM_network"></img>    
 
 설정이 끝났으면 VM을 실행하여 Ubuntu 설치를 진행한다. 먼저 VM을 실행하면 광 디스크에 넣은 ISO 이미지가 실행되며 Ubuntu 설치화면이 출력된다. Ubuntu 사용 언어는 영어를 사용하는 것을 권장한다. 한글로 사용하면 디렉토리의 이름이 한글로 설정되어서 추후 스크립트 실행에 오류가 발생할 수 있다.   
 
-<img src="/images/Ubuntu_Install_1.png" width="30%" height="30%" title="ubuntu_install_1" alt="Ubuntu_install_1"></img>   
-<img src="/images/Ubuntu_Install_3.png" width="30%" height="30%" title="ubuntu_install_3" alt="Ubuntu_install_3"></img>    
-<img src="/images/Ubuntu_Install_4.png" width="30%" height="30%" title="ubuntu_install_4" alt="Ubuntu_install_4"></img>     
+<img src="/images/Ubuntu_Install_1.png" width="50%" height="50%" title="ubuntu_install_1" alt="Ubuntu_install_1"></img>   
+<img src="/images/Ubuntu_Install_3.png" width="50%" height="50%" title="ubuntu_install_3" alt="Ubuntu_install_3"></img>    
+<img src="/images/Ubuntu_Install_4.png" width="50%" height="50%" title="ubuntu_install_4" alt="Ubuntu_install_4"></img>     
 
 'Installation type' 단계에서 보통 디스크를 모두 비우고 설치를 수행하지만 파티션을 따로 설정하려면 something else를 선택하여 진행한다. 파티션은 다음과 아래와 같이 나누었다.
 |파티션|용량|형식|마운트|
@@ -68,11 +68,11 @@ VirtualBox를 실행하여 새로 만들기로 VM을 생성한다.
 |/dev/sda4|남은 용량|Ext4|/BACKUP|
 |/dev/sdb1|남은 용량|XFS|/var/lib/docker|
 
-<img src="/images/Ubuntu_Install_5.png" width="30%" height="30%" title="ubuntu_install_5" alt="Ubuntu_install_5"></img>     
+<img src="/images/Ubuntu_Install_5.png" width="50%" height="50%" title="ubuntu_install_5" alt="Ubuntu_install_5"></img>     
 
 파티션을 나누었으면 설치를 진행하고 계정을 생성한다.
 
-<img src="/images/Ubuntu_Install_6.png" width="30%" height="30%" title="ubuntu_install_6" alt="Ubuntu_install_6"></img>     
+<img src="/images/Ubuntu_Install_6.png" width="50%" height="50%" title="ubuntu_install_6" alt="Ubuntu_install_6"></img>     
 
 ### Ubuntu Linux 환경 구성
 호스트 OS에서 VM으로 SSH 접속이 가능하도록 수동으로 고정 IP를 설정한다.
@@ -219,7 +219,7 @@ VirtualBox를 실행하여 새로 만들기로 VM을 생성한다.
     b51569e7c507: Pull complete
     da8ef40b9eca: Pull complete
     fb15d46c38dc: Pull complete
-    Digest: sha256:1f1a2d56de1d604801a9671f301190704c25d604a416f59e03c04f5c6ffee0d6
+    Digest: sha256:1f1a2d56de1d604801a9671f501190704c25d604a416f59e03c04f5c6ffee0d6
     Status: Downloaded newer image for ubuntu:16.04
     docker.io/library/ubuntu:16.04
     
@@ -352,12 +352,12 @@ VirtualBox를 실행하여 새로 만들기로 VM을 생성한다.
     
     ```bash
     docker run --name mariabd -e MYSQL_ROOT_PASSWORD=mkevin -d \
-    > -e MARIADB_DATABASE=item -p 3306:3306 mariadb:10.2
+    > -e MARIADB_DATABASE=item -p 3506:3506 mariadb:10.2
     ```
     
 - MySQL 워크벤치 설정
     
-    <img src="/images/MySQL_workbench.png" width="30%" height="30%" title="MySQL_workbench" alt="MySQL_workbench"></img>     
+    <img src="/images/MySQL_workbench.png" width="50%" height="50%" title="MySQL_workbench" alt="MySQL_workbench"></img>     
     
 - docker 컨테이너에서 동작 중인 mariadb와 연동
 
@@ -385,7 +385,7 @@ portainer/portainer-ce
 - Portiainer가 오류가 생겼을 때 자동으로 재시작하도록 설정
 - 9000포트로 접속하여 실행 확인
     
-    <img src="/images/Portainer.png" width="30%" height="30%" title="Portainer" alt="Portainer"></img>     
+    <img src="/images/Portainer.png" width="50%" height="50%" title="Portainer" alt="Portainer"></img>     
     
 
 ### Portainer APP Template으로 특정 컨테이너 배포
@@ -395,4 +395,4 @@ portainer/portainer-ce
     - app templates에서 nginx 선택
     - deploy
         
-        <img src="/images/Potainer_nginx.png" width="30%" height="30%" title="Portainer_nginx" alt="Portainer_nginx"></img>     
+        <img src="/images/Potainer_nginx.png" width="50%" height="50%" title="Portainer_nginx" alt="Portainer_nginx"></img>     
