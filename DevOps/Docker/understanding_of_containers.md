@@ -1,7 +1,4 @@
-<details>
-<summary>컨테이너 기술이란?</summary>
-<div markdown="1">
-
+## 컨테이너 기술이란?
 ### 컨테이너 기술
 - 컨테이너는 애플리케이션을 언제든 실행 가능하도록 필요한 모든 요소들을 하나의 런타임 환경으로 패키징한 호스트 OS상의 논리적 공간
     - Docker에서 Dockerfile을 사용해서 빌드한 이미지
@@ -14,7 +11,6 @@
     - 개발, 테스트, 운영을 모두 같은 환경에서 실현할 수 있다.
     -  Snowflake: 눈송이 서버
        - 개발, 테스트, 운영 서버가 모두 조금씩 다른 서버를 의미
-
    
 ### 컨테이너 특징
 - 개발한 최소한의 이미지를 통해 실행되므로 경량
@@ -75,15 +71,9 @@
     2. 애플리케이션 패키징 - Docker Image
     3. 이미지 공유 - Docker Hub
     4. 애플리케이션 배포 - Docker Container
-</div>
-</details>
-   
-<details>
-<summary>Docker 컨테이너 가상화와 VM 가상화 비교 </summary>
-<div markdown="1">
 
+## Docker 컨테이너 가상화와 VM 가상화 비교
 ### 가상화
-
 - 일반적으로 서버, 스토리지, 네트워크, 애플리케이션 등을 가상화
     - 하드웨어 리소스의 효율적 사용
     - 효율적인 자원 활용, 자동화된 IT 관리, 빠른 재해 복구
@@ -135,13 +125,8 @@
     - runC : 커널 기술의 공유를 통해 컨테이너 생성을 지원
     - containerd : 생성된 컨테이너의 라이프사이클 관리를 지원
     - dockerd : 사용자 환경에서 명령을 전달
-</div>
-</details>
 
-<details>
-<summary>Play with Docker</summary>
-<div markdown="1">
-
+## Play with Docker
 ### Docker 컨테이너 놀이터
 
 [Play with Docker | Docker](https://www.docker.com/play-with-docker/)
@@ -153,8 +138,6 @@
 
 1. Docker Hub 계정으로 로그인한 후 세션에서 새로운 인스턴스 추가
     
-    ![play_with_docker](/images/play_with_docker.png)
+    <img src="/images/play_with_docker.png" width="50%" height="50%" title="play with docker" alt="play with docker">
     
 2. 터미널에서 docker 명령 테스트
-</div>
-</details>
