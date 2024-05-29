@@ -7,7 +7,7 @@ Oracle VirtualBoxs는 호스트 OS가 하드웨어 수준의 가상화로 하드
 > <img src="/images/asus_bios.jpeg" width="50%" height="50%" title="asus_bios" alt=">
 > 출처 : asus 한국
    
-> Oracle Virtual Box 설치
+#### Oracle Virtual Box 설치
 
 먼저 VirtualBox 사이트에서 가장 최신 버전의 VirtualBox 다운로드한다.    
 
