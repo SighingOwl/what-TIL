@@ -39,32 +39,32 @@ Java, JRE, JDK가 설치되어있는 어떤 OS에서도 설치하여 사용할 �
 1. [Jenkins.io](http://Jenkins.io)의 설치 가이드에 따라 원하는 OS나 플랫폼에 적합하게 설치할 수 있다. 단 Jenkins를 설치하기 건에 JDK를 먼저 설치해야한다.
 2. Ubuntu로 동작하는 EC2 인스턴스에 Jenkins를 설치하여 EC2 인스턴스의 퍼블릭 IP:8080으로 접속하면 Jenkins 화면을 확인할 수 있다.
     
-    <img src="/images/Ubuntu_Install_1.png" width="75%" height="75%" title="jenkins installation 1" alt="jenkins installation 1">    
+    <img src="/images/Jenkins_installation_1.png" width="75%" height="75%" title="jenkins installation 1" alt="jenkins installation 1">    
     
     Jenkins에 첫 접속했을 때 표시화는 화면
     
 3. 화면에 출력된 경로의 Jenkins 패스워드를 페이지에 입력하면 로그인할 수 있다.
 4. Jenkins에 접속하면 사용할 플러그인 설치에 관한 화면이 표시된다.
     
-    <img src="/images/Ubuntu_Install_2.png" width="75%" height="75%" title="jenkins installation 2" alt="jenkins installation 2">    
+    <img src="/images/Jenkins_installation_2.png" width="75%" height="75%" title="jenkins installation 2" alt="jenkins installation 2">    
     
     권장 설치 혹은 사용자 정의 설치를 선택
     
-    <img src="/images/Ubuntu_Install_3.png" width="75%" height="75%%" title="jenkins installation 3" alt="jenkins installation 3">    
+    <img src="/images/Jenkins_installation_3.png" width="75%" height="75%%" title="jenkins installation 3" alt="jenkins installation 3">    
     
     사용자 정의 설치에서 사용할 플러그인 선택
     
-    <img src="/images/Ubuntu_Install_4.png" width="75%" height="75%" title="jenkins installation 4" alt="jenkins installation 4">    
+    <img src="//images/Jenkins_installation_4.png" width="75%" height="75%" title="jenkins installation 4" alt="jenkins installation 4">    
     
     플러그인 설치 중인 화면
     
 5. 플러그인 설치 완료 후 관리자 계정 생성
     
-    <img src="/images/Ubuntu_Install_5.png" width="75%" height="75%" title="jenkins installation 5" alt="jenkins installation 5">    
+    <img src="/images/Jenkins_installation_5.png" width="75%" height="75%" title="jenkins installation 5" alt="jenkins installation 5">    
     
     관리자 계정 생성 화면
     
 6. 다음 화면에서 Jenkins URL을 확인할 수 있다. 로컬에 설치했을 경우에는 정적 IP를 사용해서 IP가 변하지 않지만 EC2 인스턴스는 동적 IP를 사용하므로 기억해둘 필요는 없다.
 7. 설치가 완료되면 대시보드 화면을 확인할 수 있다.
     
-    <img src="/images/Ubuntu_Install_6.png" width="75%" height="75%" title="jenkins installation 6" alt="jenkins installation 6">    
+    <img src="/images/Jenkins_installation_6.png" width="75%" height="75%" title="jenkins installation 6" alt="jenkins installation 6">    
