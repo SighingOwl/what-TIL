@@ -88,7 +88,7 @@
     
 - docker hub를 확인하면 자동으로 레포지토리를 생성하여 이미지가 업로드 된 것을 볼 수 있다.
     
-    <img src="/images/Docker_hub_1.png" width="50%" height="50%" title="docker hub" alt="docker hub">
+    <img src="/images/Docker_hub_1.png" width="750%" height="75%" title="docker hub" alt="docker hub">
     
 - 업로드 된 이미지를 다른 머신에서 다운받아 실행 테스트를 해본다.
 
