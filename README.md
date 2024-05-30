@@ -10,6 +10,8 @@
 ### AWS
 ### CI/CD
    
+## AI
+    
 ## Python
    
 ## GO
