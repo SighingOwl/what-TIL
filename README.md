@@ -6,8 +6,16 @@
 [Docker configuration](/DevOps/Docker/configuration_Docker.md)      
 [Update Docker Engine](/DevOps/Docker/update_docker_engine.md)      
 [Docker Image](/DevOps/Docker/manage_docker_image.md)   
+[Basic commands for docker](/DevOps/Docker/basic_commands_for_docker.md)    
+[Docker Network](/DevOps/Docker/docker_network.md)      
+
 ### Kubernetes
 ### AWS
+   > [What is AWS](/DevOps/AWS/What_is_AWS.md)     
+   [Create AWS account](/DevOps/AWS/Create_AWS_account.md)     
+   [AWS IAM](/DevOps/AWS/IAM.md)    
+   [AWS CLI](/DevOps/AWS/AWS%20CLI.md)    
+
 ### CI/CD
    > [Jenkins](/DevOps/CICD/Jenkins.md)     
    [Jenkins jobs](/DevOps/CICD/Jenkins_jobs.md)     
