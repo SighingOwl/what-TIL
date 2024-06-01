@@ -3,11 +3,13 @@
 ## DevOps
 ### Docker
 > [Understanding of Containers](/DevOps/Docker/understanding_of_containers.md)      
-[Docker configuration](/DevOps/Docker/configuration_Docker.md)      
+[Docker Configuration](/DevOps/Docker/configuration_Docker.md)      
 [Update Docker Engine](/DevOps/Docker/update_docker_engine.md)      
 [Docker Image](/DevOps/Docker/manage_docker_image.md)   
-[Basic commands for docker](/DevOps/Docker/basic_commands_for_docker.md)    
+[Basic Commands for Docker](/DevOps/Docker/basic_commands_for_docker.md)    
 [Docker Network](/DevOps/Docker/docker_network.md)      
+[Docker Containter Monitoring](/DevOps/Docker/container_monitoring.md)     
+[Docker Container Resource Assignment](/DevOps/Docker/control_resource_of_container.md)      
 
 ### Kubernetes
 ### AWS
