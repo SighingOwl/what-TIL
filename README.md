@@ -17,6 +17,7 @@
    [Create AWS account](/DevOps/AWS/Create_AWS_account.md)     
    [AWS IAM](/DevOps/AWS/IAM.md)    
    [AWS CLI](/DevOps/AWS/AWS_CLI.md)    
+   [AWS EC2](/DevOps/AWS/EC2.md)    
 
 ### CI/CD
    > [Jenkins](/DevOps/CICD/Jenkins.md)     
