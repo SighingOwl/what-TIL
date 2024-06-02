@@ -5,7 +5,7 @@
 
 ### Kubernetes 구조
 
-<img src="/images/kubernetes_architecture.drawio.png" width="50%" height="50%" title="kube architecture" alt="kube architecture">   
+<img src="/images/kubernetes_architecture.drawio.png" width="75%" height="75%" title="kube architecture" alt="kube architecture">   
 
 
 - Kubernetes architecture는 클러스터 전반의 서비스 검색(Service Discovery)을 위해 제공하기 위한 오픈소스 플랫폼
