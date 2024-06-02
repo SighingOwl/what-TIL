@@ -12,12 +12,22 @@
 [Docker Container Resource Assignment](/DevOps/Docker/control_resource_of_container.md)      
 
 ### Kubernetes
+> [Kubernetes](/DevOps/Kubernetes/Kubernetes.md)      
+[Kubernetes Architecture](/DevOps/Kubernetes/Kubernetes_architrecture.md)      
+
 ### AWS
    > [What is AWS](/DevOps/AWS/What_is_AWS.md)     
    [Create AWS account](/DevOps/AWS/Create_AWS_account.md)     
    [AWS IAM](/DevOps/AWS/IAM.md)    
    [AWS CLI](/DevOps/AWS/AWS_CLI.md)    
    [AWS EC2](/DevOps/AWS/EC2.md)    
+   [EC2 Placement Group](./DevOps/AWS/EC2_placement_group.md)    
+   [ENI](/DevOps/AWS/ENI.md)     
+   [EC2 Hibernate](/DevOps/AWS/EC2_hibernate.md)      
+   [EBS Volume](/DevOps/AWS/EBS_volume.md)      
+   [Amazon EFS](/DevOps/AWS/Amazon_EFS.md)      
+   [EC2 Instance Store](/DevOps/AWS/EC2_instance_store.md)     
+   
 
 ### CI/CD
    > [Jenkins](/DevOps/CICD/Jenkins.md)     
