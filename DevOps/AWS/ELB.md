@@ -305,7 +305,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 ## Classic Load Balancer
 CLB는 AWS의 1세대 로드밸런서이며 OSI 3, 4계층에서 동작하는 로드밸런서입니다. 현재는 3, 4계층 로드밸런싱은 각각 GLB와 NLB로 대체되었고 기존 CLB를 사용하던 애플리케이션이 아니면 AWS에서 사용을 권장하지 않습니다. 다른 유형의 ELB들은 대상 그룹으로 트래픽을 라우팅해서 대상 그룹에 속한 대우(EC2, Lambda 함수 등)에 트래픽을 전달할 수 있지만 CLB은 대상 그룹에 트래픽을 라우팅할 수 없어 EC2 인스턴스에만 기본적인 로드밸런싱을 수행합니다.
 
-## 참고 자어
+## 참고 자료
 [AWS Elastic Load Balancing](https://aws.amazon.com/ko/elasticloadbalancing/)   
 [AWS Docs - Application Load Balancer는 무엇입니까?](https://docs.aws.amazon.com/ko_kr/elasticloadbalancing/latest/application/introduction.html)      
 [AWS Docs - Network Load Balancer는 무엇입니까?](https://docs.aws.amazon.com/ko_kr/elasticloadbalancing/latest/network/introduction.html)      
