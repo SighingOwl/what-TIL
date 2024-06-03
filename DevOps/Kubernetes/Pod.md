@@ -158,9 +158,7 @@ nodes                             no           v1                               
 
 - Pod 삭제 요청이 API 서버에 수신되면 우선 etcd 상태를 수정, 요청을 수행하는 kubelet과 Endpoints controller에 알림, 이 이벤트는 API 서버에 의해 병렬로 처리됨
     
-    ![https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/](https://prod-files-secure.s3.us-west-2.amazonaws.com/4c72d76d-4e1b-4401-8601-6e8f57d474c3/876184df-34fc-4cbc-8ae1-14d8a0bbd2ae/Untitled.png)
-    
-    https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/
+    <img src="/images/pod_delete.png" width="80%" height="80%" title="pod delete" alt="pod delete"> 
     
 - Pod 삭제 시 API Server는 Node의 kubelet에게 지시를 내려 Pod에 SIGTERM 신호를 보냄
 - SIGTERM을 받으면 처리 중이던 작업을 완료하고, 새로운 요청을 받지 않도록 개발 됨
@@ -445,7 +443,7 @@ nodes                             no           v1                               
 - 데이터베이스를 초기화하거나 애플리케이션 컨테이너가 연결되기 전 초기(기본) 데이터를 채우는 작업을 구성하면 initial container는 스키마 생성이나 데이터 마이그레이션과 같은 데이터베이스 설정 작업을 처리하여 데이터베이스가 애플리케이션 컨테이너와 상호 작용할 준비가 되었는지 확인할 수 있다.
 - 외부 Open API 사용
     
-    <img src="/images/Init_container_1.png" width="50%" height="50%" title="init container" alt="init container">    
+    <img src="/images/Init_container_1.png" width="90%" height="90%" title="init container" alt="init container">    
     
     1. Local volume에 공유 영역 생성
     2. init container는 외부 리소스에 curl 요청을 보내고 해당 데이터를 Local volume에 기록
@@ -589,7 +587,7 @@ nodes                             no           v1                               
 - application container에는 원래 목적의 기능에만 충실하고 나머지 부가적인 공통 기능들은 Sidecar container를 추가해서 사용할 수 있다.
 - 예시 - 일반적인 웹서버
     
-    <img src="/images/Sidecar_container_1.png" width="50%" height="50%" title="sidecar container" alt="sidecar container">    
+    <img src="/images/Sidecar_container_1.png" width="90%" height="90%" title="sidecar container" alt="sidecar container">    
     
     - 웹서버 컨테이너는 웹서버로서 역할에 충실하고 자신의 로그는 Pod의 파일로 남길 수 있다.
     - Sidecar container 역할인 로그 수집 컨테이너가 파일 시스템에 쌓이는 로그를 수집해서 외부의 로그 수집 시스템으로 보내는 역할을 수행
@@ -1145,7 +1143,7 @@ kubectl describe svc <label>
         - 컨테이너가 요청을 안전하게 처리할 수 있는 상태인지 확인
 - Probe 서비스 진단 시점
     
-    <img src="/images/Probe_1.png" width="50%" height="50%" title="probe" alt="probe">    
+    <img src="/images/Probe_1.png" width="90%" height="90%" title="probe" alt="probe">    
     
     - Main container가 생성될 때 진단
     - PostStart Hook

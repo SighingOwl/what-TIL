@@ -12,7 +12,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 ## Load Balance
 
-<img src="/images/ELB_1.png" width="50%" height="50%" title="elb 1" alt="elb 1">    
+<img src="/images/ELB_1.png" width="100%" height="100%" title="elb 1" alt="elb 1">    
 
 ### 로드밸런싱 특징
 - 로드 밸런서는 트래픽을 백앤드 서버나 EC2 인스턴스로 전달하는 역할을 한다.
@@ -104,14 +104,14 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 ### Cross-Zone Load Balancing
 
 - With Cross Zone Load Balancing
-<img src="/images/ELB_2.png" width="50%" height="50%" title="elb 2" alt="elb 2">    
+ <img src="/images/ELB_2.png" width="100%" height="100%" title="elb 2" alt="elb 2">    
 
-- 교차 영역 로드 밸런싱을 사용하면 각 가용 영역의 로드 밸런서에 등록된 모든 인스턴스에게 부하가 고르게 분산된다.
+    - 교차 영역 로드 밸런싱을 사용하면 각 가용 영역의 로드 밸런서에 등록된 모든 인스턴스에게 부하가 고르게 분산된다.
 
 - Without Cross Zone Load Balancing
-<img src="/images/ELB_3.png" width="50%" height="50%" title="elb 3" alt="elb 3">    
+<img src="/images/ELB_3.png" width="100%" height="100%" title="elb 3" alt="elb 3">    
 
-- 교차 영역 로드 밸런싱을 사용하지 않으면 각 로드 밸런서가 할당받은 트래픽의 양을 각 로드밸런서에 등록된 인스턴스의 수만큼 나눠 가지게 된다.
+    - 교차 영역 로드 밸런싱을 사용하지 않으면 각 로드 밸런서가 할당받은 트래픽의 양을 각 로드밸런서에 등록된 인스턴스의 수만큼 나눠 가지게 된다.
 - ALB
     - ALB는 기본적으로 교차 영역 로드 밸런싱이 활성화되어 있으며 비활성화도 가능하다.
     - 데이터를 다른 가용 영역으로 옮기는데 비용이 청구되지 않는다. 일반적으로는 다른 가용영역으로 데이터를 옮길 때 비용이 청구된다.
@@ -169,7 +169,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 ## Application Load Balancer
 
-<img src="/images/ELB_4.png" width="50%" height="50%" title="elb 4" alt="elb 4">    
+<img src="/images/ELB_4.png" width="80%" height="80%" title="elb 4" alt="elb 4">    
 
 - OSI 7계층인 응용(Application) 계층 전용 로드 밸런서로 머신간 HTTP 애플리케이션 라우팅에 사용
 - HTTP 애플리케이션을 사용하는 머신들은 대상 그룹이라는 그룹에 묶이게 된다.
@@ -188,7 +188,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 ### Target Group
 
-<img src="/images/ELB_5.png" width="50%" height="50%" title="elb 5" alt="elb 5">    
+<img src="/images/ELB_5.png" width="80%" height="80%" title="elb 5" alt="elb 5">    
 
 - EC2 인스턴스나 ECS 작업, 람다 함수들이 대상 그룹에 포함될 수 있다.
 - ALB는 IP 주소 앞에 위치할 수 있는데 이때 IP 주소는 사설 IP이여야 한다.
@@ -198,7 +198,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 1. 생성할 로드 밸런서 유형 선택
     
-    <img src="/images/ELB_6.png" width="50%" height="50%" title="elb 6" alt="elb 6">    
+    <img src="/images/ELB_6.png" width="70%" height="70%" title="elb 6" alt="elb 6">    
     
 2. ALB 설정
     1. 기본 구성
@@ -229,22 +229,19 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 - 로드 밸런서는 리스너 규칙을 사용해서 특정 트래픽에 대한 작업을 지정할 수 있다.
     
-    <img src="/images/ELB_7.png" width="50%" height="50%" title="elb 7" alt="elb 7">    
+    <img src="/images/ELB_7.png" width="70%" height="70%" title="elb 7" alt="elb 7">    
     
 - 지정한 조건에 부합하는 트래픽이 취할 작업을 설정
     - 대상 그룹으로 전달, URL로 리디렉션, 고정 응답 반환을 설정할 수 있다.
-    
-    <img src="/images/ELB_8.png" width="50%" height="50%" title="elb 8" alt="elb 8">    
+        <img src="/images/ELB_8.png" width="70%" height="70%" title="elb 8" alt="elb 8">    
     
 - 규칙을 적용할 우선 순위를 설정하여 트래픽에 규칙을 적용할 수 있다.
     - 트래픽이 우선 순위가 더 높은 규칙에 부합될 경우 우선순위가 낮은 규칙은 무시된다.
-    
-    <img src="/images/ELB_9.png" width="50%" height="50%" title="elb 9" alt="elb 9">    
+        <img src="/images/ELB_9.png" width="70%" height="70%" title="elb 9" alt="elb 9">    
     
 
 ## Network Load Balancer
-
-<img src="/images/ELB_10.png" width="50%" height="50%" title="elb 10" alt="elb 10">    
+<img src="/images/ELB_10.png" width="80%" height="80%" title="elb 10" alt="elb 10">    
 
 - L4 로드밸런서로 TCP와 UDP 트래픽을 다룰 수 있다.
 - 초당 수백만 건의 request를 처리할 수 있고 ALB에 비해 지연 시간이 짧다.
@@ -256,7 +253,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 ### Target Group
 
-<img src="/images/ELB_11.png" width="50%" height="50%" title="elb 11" alt="elb 11">    
+<img src="/images/ELB_11.png" width="100%" height="100%" title="elb 11" alt="elb 11">    
 
 - EC2 인스턴스
 - IP 주소 - 사설
@@ -282,8 +279,8 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 - 네트워크의 모든 트래픽이 방화벽을 통과하게 하거나 침입 탐지 및 방지 시스템에 사용
 - IDPS나 심층 패킷 분석 시스템 혹은 일부 페이로드를 네트워크 수준에서 수정할 수 있다.
 - GWLB를 사용하는 이유와 과정
-    
-    <img src="/images/ELB_12.png" width="50%" height="50%" title="elb 12" alt="elb 12">    
+
+    <img src="/images/ELB_12.png" width="100%" height="100%" title="elb 12" alt="elb 12">    
     
     - 애플리케이션에 액세스하려는 사용자가 있을 때 트래픽이 애플리케이션으로 이동하기 전에 모든 트래픽을 검사하려고 하면 다소 복잡한 과정이 필요했지만 GWLB를 사용하면 간단하게 해결된다.
     - GWLB를 생성하면 VPC에서 사용자의 트래픽이 GWLB를 통과하도록 라우팅 테이블이 업데이트되된다.
@@ -297,7 +294,7 @@ ELB는 Elastic Load Balancing의 약자로 하나 이상의 가용 영역에 있
 
 ### Target Group
 
-<img src="/images/ELB_13.png" width="50%" height="50%" title="elb 13" alt="elb 13">    
+<img src="/images/ELB_13.png" width="100%" height="100%" title="elb 13" alt="elb 13">    
 
 - EC2 Instances
 - IP 주소 - 사설

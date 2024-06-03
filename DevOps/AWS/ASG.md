@@ -37,7 +37,7 @@
     - 장애가 발생한 EC2 인스턴스를 자동으로 종료하고 새로운 EC2 인스턴스를 생성할 수 있다.
 - ASG 크기 설정
     
-    <img src="/images/ASG_1.png" width="50%" height="50%" title="asg 1" alt="asg 1">    
+    <img src="/images/ASG_1.png" width="80%" height="80%" title="asg 1" alt="asg 1">    
     
 - Launch Template
     - ASG를 사용하기 위해 시작 템플릿을 만들어야 한다.
@@ -61,7 +61,7 @@
 
 1. EC2 콘솔의 Auto Scaling Group을 생성
     
-    <img src="/images/ASG_2.png" width="50%" height="50%" title="asg 2" alt="asg 2">    
+    <img src="/images/ASG_2.png" width="70%" height="70%" title="asg 2" alt="asg 2">    
     
 2. ASG를 생성하기 위해서 시작 템플릿이 필요하므로 ASG를 적용할 EC2 인스턴스의 시작 템플릿을 생성 및 버전 선택
     - 시작 템플릿을 만들기 위해 AMI가 필요하며 커스텀한 AMI나 AWS 제공 AMI를 사용한다.
@@ -120,7 +120,7 @@
 
 1. 생성한 ASG의 Auto Scaling 탭에서 크기 조정 정책을 생성할 수 있다.
     
-    <img src="/images/ASG_3.png" width="50%" height="50%" title="asg 3" alt="asg 3">    
+    <img src="/images/ASG_3.png" width="60%" height="60%" title="asg 3" alt="asg 3">    
     
 - 예약된 작업 생성
     1. 특정 시간에 크기 조정을 하도록 작업을 생성
