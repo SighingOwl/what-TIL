@@ -15,6 +15,8 @@
 > [Kubernetes](/DevOps/Kubernetes/Kubernetes.md)      
 [Kubernetes Architecture](/DevOps/Kubernetes/Kubernetes_architrecture.md)      
 [Pod](/DevOps/Kubernetes/Pod.md)    
+[Service](/DevOps/Kubernetes/Service.md)        
+
 
 
 ### AWS
@@ -31,6 +33,7 @@
 [EC2 Instance Store](/DevOps/AWS/EC2_instance_store.md)     
 [Elastic Load Balancer](/DevOps/AWS/ELB.md)       
 [Auto Scaling Group](/DevOps/AWS/ASG.md)        
+[RDS](/DevOps/AWS/RDS.md)       
 
 ### CI/CD
 > [Jenkins](/DevOps/CICD/Jenkins.md)     
