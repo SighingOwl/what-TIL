@@ -324,5 +324,5 @@ Route 53은 AWS에서 사용할 수 있는 가용성과 확장성이 뛰어난 D
 3. 서드 파티에서 구매한 도메인이 Route 53을 가리키게 된다.
 
 ## 참고 자료
-[Route 53](https://aws.amazon.com/ko/route53/)
-[정보 문화사 - 아마존 웹 서비스](https://www.yes24.com/Product/Goods/69304366)      
+[Route 53](https://aws.amazon.com/ko/route53/)      
+[정보 문화사 - 아마존 웹 서비스](https://www.yes24.com/Product/Goods/69304366)       

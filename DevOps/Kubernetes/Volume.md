@@ -1034,3 +1034,6 @@
 - 하나 이상의 EBS 볼륨을 단일 EC2 인스턴스에 연결 가능
 - 필요에 따라 EC2 인스턴스 간에 EBS 볼륨 이동 가능
 - EBS 볼륨은 EC2 인스턴스를 사용해 데이터베이스를 실행하는 데 사용 가능
+
+## 참고 자료
+Fastcampus - 실무까지 한 번에 끝내는 DevOps를 위한 Docker & Kubernetes feat. aws EKS 초격차 패키지 Online.

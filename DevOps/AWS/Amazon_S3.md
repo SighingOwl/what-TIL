@@ -208,5 +208,5 @@ Object는 키-값 형식의 객체로 아래와 같은 특징을 가지고 있�
 - 객체의 티어를 알아서 관리해주므로 사용하기 편한 스토리지다.
 
 # 참고 자료
-[AWS Docs - S3](https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/Welcome.html)
+[AWS Docs - S3](https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/Welcome.html)       
 [정보 문화사 - 아마존 웹 서비스](https://www.yes24.com/Product/Goods/69304366)      
