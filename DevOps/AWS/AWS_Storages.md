@@ -430,3 +430,16 @@ AWS는 S3나 EBS, EFS외에도 다른 스토리지 서비스를 제공하고 있
 ### Database
 
 - 데이터 저장은 가능하나 인덱스와 쿼리 작업을 필요로 하는 특수한 워크로드가 있다.
+
+## 참고 자료    
+[AWS Docs - AWS Snow 패밀리](https://docs.aws.amazon.com/ko_kr/whitepapers/latest/how-aws-pricing-works/aws-snow-family.html)      
+[AWS Docs - AWS Snowball 엣지는 무엇인가요?](https://docs.aws.amazon.com/ko_kr/snowball/latest/developer-guide/whatisedge.html)    
+[AWS Docs - AWS Snowcone는 무엇인가요?](https://docs.aws.amazon.com/ko_kr/snowball/latest/snowcone-guide/snowcone-what-is-snowcone.html)   
+[AWS 한국 블로그 - AWS Snowmobile – 엑사 바이트(Exabyte) 데이터를 몇 주 만에 클라우드로](https://aws.amazon.com/ko/blogs/korea/aws-snowmobile-move-exabytes-of-data-to-the-cloud-in-weeks/)     
+[AWS Docs - FSx for Windows File Server란 무엇입니까?](https://docs.aws.amazon.com/ko_kr/fsx/latest/WindowsGuide/what-is.html)      
+[AWS Docs - Amazon FSx for Lustre란?](https://docs.aws.amazon.com/ko_kr/fsx/latest/LustreGuide/what-is.html)        
+[AWS Docs - ONTAP용 아마존 NetApp FSx란 무엇입니까?](https://docs.aws.amazon.com/ko_kr/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html)        
+[AWS Docs - What is Amazon FSx for OpenZFS?](https://docs.aws.amazon.com/ko_kr/fsx/latest/OpenZFSGuide/what-is-fsx.html)        
+[AWS Docs - AWS Storage Gateway 설명서](https://docs.aws.amazon.com/ko_kr/storagegateway/)      
+[AWS Docs - AWS Transfer Family 무엇입니까?](https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/what-is-aws-transfer-family.html)      
+[AWS Docs - AWS DataSync란 무엇인가요?](https://docs.aws.amazon.com/ko_kr/datasync/latest/userguide/what-is-datasync.html)  
