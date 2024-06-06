@@ -17,6 +17,7 @@
 [Pod](/DevOps/Kubernetes/Pod.md)    
 [Service](/DevOps/Kubernetes/Service.md)        
 [Volume](/DevOps/Kubernetes/Volume.md)      
+[Configmap & Secret](/DevOps/Kubernetes/Configmap_secret.md)        
 
 
 ### AWS
@@ -36,6 +37,9 @@
 [RDS](/DevOps/AWS/RDS.md)       
 [Route 53](/DevOps/AWS/Amazon_Route53.md)       
 [S3](/DevOps/AWS/Amazon_S3.md)      
+[S3 Security](/DevOps/AWS/Amazon_S3_Security.md)        
+[CloudFront](/DevOps/AWS/Amazon_CloudFront.md)      
+[AWS Storages](/DevOps/AWS/AWS_Storages.md)     
 
 ### CI/CD
 > [Jenkins](/DevOps/CICD/Jenkins.md)     
@@ -45,6 +49,7 @@
 [Jenkins build trigger](/DevOps/CICD/Jenkins_build_trigger.md)       
 [Jenkins master/slave](/DevOps/CICD/Jenkins_master_slave.md)     
 [Jeknins Authentication & Authorization](/DevOps/CICD/Jenkins_authentication_authorization.md)       
+
 ## AI
 
 ## Data Analysis
