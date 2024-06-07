@@ -464,7 +464,7 @@ Kinesis Data Firehose
 
 ## 참고 자료
 [AWS Docs - Amazon 심플 큐 서비스란?](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)   
-[AWS Docs - Amazon SNS란 무엇인가요?]https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html   
+[AWS Docs - Amazon SNS란 무엇인가요?](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html)   
 [AWS - Amazon Kinesis](https://aws.amazon.com/ko/kinesis/)      
 [AWS Docs - Amazon Kinesis Data Streams란?](https://docs.aws.amazon.com/ko_kr/streams/latest/dev/introduction.html)     
 [AWS Docs - Amazon 데이터 파이어호스란 무엇입니까?](https://docs.aws.amazon.com/ko_kr/firehose/latest/dev/what-is-this-service.html)    
