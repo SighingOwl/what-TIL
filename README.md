@@ -21,7 +21,6 @@
 [Workload Resources](/DevOps/Kubernetes/Workload_resources.md)      
 [Namespace](/DevOps/Kubernetes/Namespace.md)        
 
-
 ### AWS
 > [What is AWS](/DevOps/AWS/What_is_AWS.md)     
 [Create AWS account](/DevOps/AWS/Create_AWS_account.md)     
@@ -59,7 +58,9 @@
 ## Data Analysis
 
 ## Python
-   
+### Django
+> [What is Django](/Python/Django/What_is_Django.md)        
+  
 ## GO
 
 ## Java
