@@ -60,7 +60,9 @@
 ## Python
 ### Django
 > [What is Django](/Python/Django/What_is_Django.md)        
-  
+[Basic of Django](/Python/Django/Basic_of_Django.md)        
+
+
 ## GO
 
 ## Java
