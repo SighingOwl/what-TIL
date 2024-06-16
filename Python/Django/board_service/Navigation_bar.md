@@ -55,7 +55,7 @@
         ```
         
         > 점프 투 장고에서는 bootstrap 4를 사용해서 jQuery 의존성이 남아있지만 bootstrap 5부터는 jQuery 의존성을 완전히 없애 jQuery를 추가하지 않아도 된다.
-        > 
+        [내비게이션 바](https://getbootstrap.kr/docs/5.1/components/navbar/)
 5. 햄버거 메뉴 확인
     
     <img src="/images/navigation_3.png" width="50%" height="50%" title="navigation bar 3" alt="navigation bar 3">   
