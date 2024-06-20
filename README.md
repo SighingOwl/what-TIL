@@ -64,6 +64,13 @@
 [Basic of Django](/Python/Django/Basic_of_Django.md)        
 [Make some funtions of board](/Python/Django/Make_functions_for_board.md)       
 [Question registration](/Python/Django/board_service/Question_registration.md)      
+[Navigation bar](/Python/Django/board_service/Navigation_bar.md)        
+[Paging](/Python/Django/board_service/Paging.md)        
+[Template filter](/Python/Django/board_service/Template_filter.md)      
+[Show number of comments](/Python/Django/board_service/Show_number_of_comments.md)      
+[Login Logout](/Python/Django/board_service/Login_Logout.md)        
+[Signup](/Python/Django/board_service/Signup.md)        
+[Add author to model](/Python/Django/board_service/Add_author_to_models.md)     
 
 
 ## GO

@@ -200,7 +200,7 @@ django.contrib.auth 앱을 사용해서 로그인, 로그아웃 기능을 구현
     </form>
     <!-- 로그인 버튼 표시 -->
     {% else %}
-    <form action="{% url 'common:login' %}" method="post">
+    <form action="{% url 'common:login' %}" method="get">
         {% csrf_token %}
         <input type="submit" value="로그인">
     </form>
