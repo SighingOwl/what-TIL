@@ -71,6 +71,8 @@
 [Login Logout](/Python/Django/board_service/Login_Logout.md)        
 [Signup](/Python/Django/board_service/Signup.md)        
 [Add author to model](/Python/Django/board_service/Add_author_to_models.md)     
+[Show the author](/Python/Django/board_service/Show_the_author.md)      
+[Modify and Delete the post](/Python/Django/board_service/Modify_and_delete_the_post.md)        
 
 
 ## GO
