@@ -73,6 +73,10 @@
 [Add author to model](/Python/Django/board_service/Add_author_to_models.md)     
 [Show the author](/Python/Django/board_service/Show_the_author.md)      
 [Modify and Delete the post](/Python/Django/board_service/Modify_and_delete_the_post.md)        
+[Views file sparation](/Python/Django/board_service/Views_file_sparation.md)        
+[Post recommendation](/Python/Django/board_service/Post_recommendation.md)      
+[Prevent the scroll reset](/Python/Django/board_service/Prevent_the_scroll_reset.md)        
+[Markdown](/Python/Django/board_service/Markdown.md)        
 
 
 ## GO

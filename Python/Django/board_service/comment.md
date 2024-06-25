@@ -54,7 +54,7 @@
     	                <!-- 수정, 삭제 링크 표시 -->
     	                {% if request.user == comment.author %}
     	                <a href="{% url 'pybo:comment_modify_question' comment.id %}" class="small">수정</a>
-    	                <a href="%" class="delete small" data-uri="{% url 'pybo:comment_delete_question' comment.id %}">삭제</a>
+    	                <a href="#" class="delete small" data-uri="{% url 'pybo:comment_delete_question' comment.id %}">삭제</a>
     	                {% endif %}
     	            </div>
     	        {% endfor %}
@@ -239,7 +239,7 @@
     	      {% endif %}
     	  </span>
     	  {% if request.user == comment.author %}
-    	  <a href="{% url 'pybo:comment_modify_answer' comment.id}" class="small">수정</a>
+    	  <a href="{% url 'pybo:comment_modify_answer' comment.id %}" class="small">수정</a>
     	  <a href="#" class="delete small" data-uri="{% url 'pybo:comment_delete_answer' comment.id %}">삭제</a>
     	  {% endif %}
     	</div>
