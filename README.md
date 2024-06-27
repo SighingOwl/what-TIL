@@ -77,6 +77,7 @@
 [Post recommendation](/Python/Django/board_service/Post_recommendation.md)      
 [Prevent the scroll reset](/Python/Django/board_service/Prevent_the_scroll_reset.md)        
 [Markdown](/Python/Django/board_service/Markdown.md)        
+[Search and Sort](/Python/Django/board_service/Search_and_Sort.md)      
 
 
 ## GO
